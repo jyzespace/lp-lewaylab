@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Zap, Clock, Bot, TrendingDown, Rocket, Headphones } from 'lucide-react';
+import AnimatedButton from './AnimatedButton';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -74,24 +75,22 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <button
+            <AnimatedButton
               onClick={goToSchedule}
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#0d1117] bg-white rounded-lg hover:bg-gray-100 transition-colors duration-200"
-              style={{ fontFamily: 'Inter, sans-serif' }}
+              variant="primary"
             >
               Agendar Consultoria Gratuita
-            </button>
+            </AnimatedButton>
 
-            <button
+            <AnimatedButton
               onClick={openWhatsApp}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-transparent border border-gray-700 rounded-lg hover:border-gray-600 hover:bg-white/5 transition-all duration-200"
-              style={{ fontFamily: 'Inter, sans-serif' }}
+              variant="secondary"
             >
               Falar no WhatsApp
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </button>
+            </AnimatedButton>
           </div>
 
           {/* Benefits Marquee */}

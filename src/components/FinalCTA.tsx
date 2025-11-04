@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import AnimatedButton from './AnimatedButton';
 
 const FinalCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,21 +45,21 @@ const FinalCTA = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <button
+            <AnimatedButton
               onClick={goToSchedule}
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0a0e27] font-semibold text-lg rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-lg"
-              style={{ fontFamily: 'Inter, sans-serif' }}
+              variant="primary"
+              className="!text-lg shadow-lg"
             >
               Agendar Consultoria
-            </button>
+            </AnimatedButton>
 
-            <button
+            <AnimatedButton
               onClick={openWhatsApp}
-              className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white border-2 border-white/20 font-semibold text-lg rounded-lg hover:bg-white/10 hover:border-white/30 transition-all duration-200"
-              style={{ fontFamily: 'Inter, sans-serif' }}
+              variant="secondary"
+              className="!text-lg !border-2 !border-white/20 hover:!border-white/30"
             >
               Falar no WhatsApp
-            </button>
+            </AnimatedButton>
           </div>
 
           {/* Benefits */}

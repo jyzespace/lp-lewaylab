@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AnimatedButton from './AnimatedButton';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -103,8 +104,7 @@ const Header = () => {
 
           {/* Right Side Button */}
           <div className="hidden md:flex items-center gap-4">
-            <a
-              href="#schedule-meeting"
+            <AnimatedButton
               onClick={(e) => {
                 e.preventDefault();
                 const element = document.querySelector('#schedule-meeting');
@@ -112,11 +112,11 @@ const Header = () => {
                   element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
               }}
-              className="px-4 py-2 text-sm font-semibold text-[#0d1117] bg-white rounded-md hover:bg-gray-100 transition-colors duration-200"
-              style={{ fontFamily: 'Inter, sans-serif' }}
+              variant="primary"
+              className="!px-4 !py-2 !text-sm"
             >
               Agendar Reunião
-            </a>
+            </AnimatedButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -212,8 +212,7 @@ const Header = () => {
               >
                 Contato
               </a>
-              <a
-                href="#schedule-meeting"
+              <AnimatedButton
                 onClick={(e) => {
                   e.preventDefault();
                   setIsMenuOpen(false);
@@ -222,11 +221,11 @@ const Header = () => {
                     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
                 }}
-                className="px-4 py-2 text-sm font-semibold text-[#0d1117] bg-white rounded-md hover:bg-gray-100 transition-colors duration-200 text-center"
-                style={{ fontFamily: 'Inter, sans-serif' }}
+                variant="primary"
+                className="!px-4 !py-2 !text-sm text-center w-full"
               >
                 Começar
-              </a>
+              </AnimatedButton>
             </div>
           </div>
         )}
