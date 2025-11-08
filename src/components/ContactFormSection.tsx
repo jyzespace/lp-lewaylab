@@ -57,7 +57,7 @@ const ContactFormSection = () => {
         `💬 *Mensagem:*\n${formData.mensagem}\n\n` +
         `⏰ *Enviado em:* ${new Date().toLocaleString('pt-BR')}`
       );
-      const whatsappUrl = `https://wa.me/5533997001663?text=${message}`;
+      const whatsappUrl = `https://wa.me/554588294919?text=${message}`;
 
       setTimeout(() => {
         window.open(whatsappUrl, '_blank');

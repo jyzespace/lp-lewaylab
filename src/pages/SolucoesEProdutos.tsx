@@ -14,7 +14,7 @@ const SolucoesEProdutos = () => {
   }, []);
 
   const openWhatsApp = () => {
-    const phoneNumber = "5533997001663";
+    const phoneNumber = "554588294919";
     const message = encodeURIComponent("Olá! Quero conhecer as soluções do NewayLab para meu negócio.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');

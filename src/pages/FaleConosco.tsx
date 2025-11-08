@@ -31,7 +31,7 @@ const FaleConosco = () => {
       color: "from-green-500 to-emerald-500",
       badge: "Preferido",
       onClick: () => {
-        const phoneNumber = "5533997001663";
+        const phoneNumber = "554588294919";
         const message = encodeURIComponent("Olá! Gostaria de falar com a equipe do NewayLab sobre meus projetos.");
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
       }
@@ -44,7 +44,7 @@ const FaleConosco = () => {
       action: "Ligar Agora",
       color: "from-blue-500 to-cyan-500",
       badge: "Rápido",
-      onClick: () => window.open('tel:+5533997001663')
+      onClick: () => window.open('tel:+554588294919')
     },
     {
       icon: Mail,
@@ -129,7 +129,7 @@ const FaleConosco = () => {
         `💬 *Mensagem:*\n${formData.mensagem}\n\n` +
         `⏰ *Enviado em:* ${new Date().toLocaleString('pt-BR')}`
       );
-      const whatsappUrl = `https://wa.me/5533997001663?text=${message}`;
+      const whatsappUrl = `https://wa.me/554588294919?text=${message}`;
       window.open(whatsappUrl, '_blank');
     }, 2000);
   };

@@ -20,7 +20,7 @@ const ComoFunciona = () => {
 
   // Função para abrir WhatsApp
   const openWhatsApp = () => {
-    const phoneNumber = "5533997001663";
+    const phoneNumber = "554588294919";
     const message = encodeURIComponent("Olá! Gostaria de entender melhor como funciona o processo do NewayLab.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');

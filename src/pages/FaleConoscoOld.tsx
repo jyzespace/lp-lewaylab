@@ -23,7 +23,7 @@ const FaleConosco = () => {
 
   // Função para abrir WhatsApp
   const openWhatsApp = () => {
-    const phoneNumber = "5533997001663";
+    const phoneNumber = "554588294919";
     const message = encodeURIComponent("Olá! Gostaria de falar com a equipe do NewayLab sobre meus projetos.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
@@ -101,7 +101,7 @@ const FaleConosco = () => {
       description: "(33) 99700-1663",
       action: "Ligar Agora",
       color: "from-blue-500 to-cyan-500",
-      onClick: () => window.open('tel:+5533997001663')
+      onClick: () => window.open('tel:+554588294919')
     },
     {
       icon: Mail,
@@ -161,7 +161,7 @@ const FaleConosco = () => {
         `Meu e-mail: ${formData.email}\n` +
         `Telefone: ${formData.telefone}`
       );
-      const whatsappUrl = `https://wa.me/5533997001663?text=${message}`;
+      const whatsappUrl = `https://wa.me/554588294919?text=${message}`;
       window.open(whatsappUrl, '_blank');
     }, 2000);
   };
